@@ -1,0 +1,121 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+#slider-wrapper{
+  position: relative;
+  width:700px;
+  height:400px;
+  overflow: hidden;
+}
+.img-bir, .img-iki, .img-uc, .img-dort{
+  position: absolute;
+  width:700px;
+  height:400px;
+}
+.img-bir{left: 0px;}
+.img-iki{left: 700px;}
+.img-uc{left: 1400px;}
+.img-dort{left: 2100px;}
+
+
+#slider-wrapper > .slider{
+  position: absolute;
+  left:0px;
+  width: 2800px;
+  height: 400px;
+  -webkit-animation-duration: 15s;
+  -webkit-animation-name: sliders;
+  -webkit-animation-iteration-count:infinite;
+  -moz-animation-duration: 15s;
+  -moz-animation-name: sliders;
+  -moz-animation-iteration-count:infinite;
+  -ms-animation-duration: 15s;
+  -ms-animation-name: sliders;
+  -ms-animation-iteration-count:infinite;
+  animation-duration: 15s;
+  animation-iteration-count:infinite;
+
+}
+#slider-wrapper > .slider:hover{
+-webkit-animation-play-state:paused;
+}
+
+
+#slider-wrapper > .slider > a > span{
+  position:absolute;
+  background:#333;
+  color:white;
+  left:0;
+  top:80%;
+  padding:8px 22px;
+  display:table;
+}
+#slider-wrapper a{
+   font-size:18px;
+   font-family:Arial;
+}
+
+
+#slider-wrapper > .slider > a > span{
+  position:absolute;
+  background:#333;
+  color:white;
+  left:0;
+  top:80%;
+  padding:8px 22px;
+  display:table;
+}
+#slider-wrapper a{
+   font-size:18px;
+   font-family:Arial;
+}
+@-webkit-keyframes sliders{
+  0% {left:0px;}
+  10% {left:0px;}
+  20% {left:-700px;}
+  30% {left:-700px;}
+  40% {left:-1400px;}
+  50% {left:-1400px;}
+  60% {left:-2100px;}
+  70% {left:-2100px;}
+  80% {left:-2800px;}
+  90% {left:-2800px;}
+}
+@-moz-keyframes sliders{
+  0% {left:0px;}
+  10% {left:0px;}
+  20% {left:-700px;}
+  30% {left:-700px;}
+  40% {left:-1400px;}
+  50% {left:-1400px;}
+  60% {left:-2100px;}
+  70% {left:-2100px;}
+  80% {left:-2800px;}
+  90% {left:-2800px;}
+}
+@-ms-keyframes sliders {
+  0% {left:0px;}
+  10% {left:0px;}
+  20% {left:-700px;}
+  30% {left:-700px;}
+  40% {left:-1400px;}
+  50% {left:-1400px;}
+  60% {left:-2100px;}
+  70% {left:-2100px;}
+  80% {left:-2800px;}
+  90% {left:-2800px;}
+}
+@keyframes sliders{
+  0% {left:0px;}
+  10% {left:0px;}
+  20% {left:-700px;}
+  30% {left:-700px;}
+  40% {left:-1400px;}
+  50% {left:-1400px;}
+  60% {left:-2100px;}
+  70% {left:-2100px;}
+  80% {left:-2800px;}
+  90% {left:-2800px;}
+}s
